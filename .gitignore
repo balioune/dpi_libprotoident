@@ -16,6 +16,6 @@ libtool
 ltmain.sh
 missing
 stamp-h1
-tools/arff/lpi_arff
-tools/find_unknown/lpi_find_unknown
-tools/protoident/lpi_protoident
+libprotoident-2.0.8/tools/arff/lpi_arff
+libprotoident-2.0.8/tools/find_unknown/lpi_find_unknown
+libprotoident-2.0.8/tools/protoident/lpi_protoident
