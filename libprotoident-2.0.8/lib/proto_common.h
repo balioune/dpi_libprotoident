@@ -36,16 +36,12 @@
 
 #include "libprotoident.h"
 
-#ifndef __BYTE_ORDER
-#include <endian.h>
-#endif
-
 #define ANY -1
 
 #define MASKOCTET(x) \
         ((x) == ANY ? 0U : 255U)
 
-#if __BYTE_ORDER == __BIG_ENDIAN
+#if BYTE_ORDER == BIG_ENDIAN
 #define FORMUP(a,b,c,d) \
         (unsigned)((((a)&0xFF)<<24)|(((b)&0xFF)<<16)|(((c)&0xFF)<<8)|((d)&0xFF))
 #else
